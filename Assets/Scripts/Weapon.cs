@@ -7,6 +7,9 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject shooter;
 
+    public GameObject explosionEffect;
+    public LineRenderer lineRenderer;
+
     private Transform _firePoint;
 
     void Awake()
@@ -22,23 +25,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
         
-        float horizontal = Input.GetAxis("Horizontal");
-        //Changing side
-        if (horizontal > 0f){
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
-        } else if (horizontal < 0f) {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
-        }
-        
-        //Fire
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-
-        */
           
     }
 
@@ -56,6 +43,34 @@ public class Weapon : MonoBehaviour
                 //Right
                 bulletComponent.direction = Vector2.right;
             }
+        }
+    }
+
+    public IEnumerator ShootWithRaycast()
+    {
+        if (explosionEffect != null && lineRenderer != null) {
+            RaycastHit2D hitInfo = Physics2D.Raycast(_firePoint.position, _firePoint.right);
+
+            if (hitInfo)
+            {
+                //Código maroto
+
+                Instantiate(explosionEffect, hitInfo.point, Quaternion.identity);
+
+                // Set line Renderer
+                lineRenderer.SetPosition(0, _firePoint.position);
+                lineRenderer.SetPosition(1, hitInfo.point);
+            } else
+            {
+                lineRenderer.SetPosition(0, _firePoint.position);
+                lineRenderer.SetPosition(1, hitInfo.point + Vector2.right * 100);
+            }
+
+            lineRenderer.enabled = true;
+
+            yield return null;
+
+            lineRenderer.enabled = false;
         }
     }
 }

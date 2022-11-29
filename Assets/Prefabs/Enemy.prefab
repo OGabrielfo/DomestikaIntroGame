@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1779600627669760038}
   - component: {fileID: 1779600627669760039}
-  - component: {fileID: 6084484026692333892}
   - component: {fileID: 822630898816122768}
   - component: {fileID: 2186547524499719142}
   - component: {fileID: 1865177354}
+  - component: {fileID: 1039662601813255286}
   - component: {fileID: 8891571068624049248}
   m_Layer: 0
   m_Name: Enemy
@@ -91,22 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6084484026692333892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779600627669760033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38a9465df0d332541be31efb739f83bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  minX: -2.5
-  maxX: 2.3
-  waitingTime: 2
 --- !u!61 &822630898816122768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,6 +158,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1039662601813255286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779600627669760033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18b2f42da50c104e8c4ef55a73f3d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8891571068624049248
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     public float velocity;
     public float jumpPower;
     public int jumpLimit;
-    public GameObject isGrounded;
+    public GameObject GroundCheck;
     public int longIdleLimit;
 
     // PRIVATE VARIABLES
