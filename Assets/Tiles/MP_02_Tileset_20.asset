@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: MP_02_Tileset_20
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1158676042, guid: 075bf8175c97bdf4daec52ee95a643cb, type: 3}
+  m_Sprite: {fileID: 6845656493985592992, guid: 188b44a70aeed42f6a09f704ded21695,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

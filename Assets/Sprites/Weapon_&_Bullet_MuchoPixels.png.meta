@@ -1,7 +1,31 @@
 fileFormatVersion: 2
-guid: b37a38a61a2a6214f9391887db512425
+guid: 05ee4a895288a420bb3b4f018d07960a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -737170406580763674
+    second: Weapon_&_Bullet_MuchoPixels_0
+  - first:
+      213: 3674543409907299621
+    second: Weapon_&_Bullet_MuchoPixels_1
+  - first:
+      213: -1653321093944874658
+    second: Weapon_&_Bullet_MuchoPixels_2
+  - first:
+      213: -6613703632812530144
+    second: Weapon_&_Bullet_MuchoPixels_3
+  - first:
+      213: -5084162392104515186
+    second: Weapon_&_Bullet_MuchoPixels_4
+  - first:
+      213: 7342932414387450978
+    second: Weapon_&_Bullet_MuchoPixels_5
+  - first:
+      213: 306236599138051366
+    second: Weapon_&_Bullet_MuchoPixels_6
+  - first:
+      213: 2467329559177804928
+    second: Weapon_&_Bullet_MuchoPixels_7
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -47,7 +71,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -62,81 +86,81 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa9f1b6472358b446ae8ad05279c6a87
-      internalID: -328978728
+      spriteID: 9b36e1e393ec54c8e96ab41d3e8a95e3
+      internalID: -737170406580763674
       vertices: []
       indices: 
       edges: []
@@ -176,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ded35d9aedcaea4bb6a8d9ed6afa566
-      internalID: 1220415189
+      spriteID: 86d99aea56f5e4dda847e6ab90a9f280
+      internalID: 3674543409907299621
       vertices: []
       indices: 
       edges: []
@@ -197,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400024c6e64f1774eb510bd32abbac02
-      internalID: 16957342
+      spriteID: 6d13b0f1d24834e658b72ad1a2337691
+      internalID: -1653321093944874658
       vertices: []
       indices: 
       edges: []
@@ -218,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54cd0faaa4d1f184493a800f676a9088
-      internalID: -1956510999
+      spriteID: c810f37d51a5349798f08826295d7cf6
+      internalID: -6613703632812530144
       vertices: []
       indices: 
       edges: []
@@ -239,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5792e34ad9b94746ac43fb928b8967c
-      internalID: 1461694970
+      spriteID: 2360e513383a44af693353b693d66abd
+      internalID: -5084162392104515186
       vertices: []
       indices: 
       edges: []
@@ -260,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eb2e33860b596140bebae3f2ae57630
-      internalID: -351134086
+      spriteID: 65ec1ca17830c4b4eb3de73ba4ff023b
+      internalID: 7342932414387450978
       vertices: []
       indices: 
       edges: []
@@ -281,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4266af6431301554da7dce553b98ff27
-      internalID: -265908979
+      spriteID: 0bf2b72606cef490a82982de2314339a
+      internalID: 306236599138051366
       vertices: []
       indices: 
       edges: []
@@ -302,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c42e8c830bec494e97d5cb26719d2e1
-      internalID: 1559486633
+      spriteID: 0d9a2582bd82d4ed6bcae60a4ce80726
+      internalID: 2467329559177804928
       vertices: []
       indices: 
       edges: []
@@ -311,7 +335,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a0caea5d3e86944898352274cecea281
     internalID: 0
     vertices: []
     indices: 
@@ -319,14 +343,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Weapon_&_Bullet_MuchoPixels_4: 1461694970
-      Weapon_&_Bullet_MuchoPixels_6: -265908979
-      Weapon_&_Bullet_MuchoPixels_3: -1956510999
-      Weapon_&_Bullet_MuchoPixels_2: 16957342
-      Weapon_&_Bullet_MuchoPixels_7: 1559486633
-      Weapon_&_Bullet_MuchoPixels_0: -328978728
-      Weapon_&_Bullet_MuchoPixels_1: 1220415189
-      Weapon_&_Bullet_MuchoPixels_5: -351134086
+      Weapon_&_Bullet_MuchoPixels_4: -5084162392104515186
+      Weapon_&_Bullet_MuchoPixels_6: 306236599138051366
+      Weapon_&_Bullet_MuchoPixels_3: -6613703632812530144
+      Weapon_&_Bullet_MuchoPixels_2: -1653321093944874658
+      Weapon_&_Bullet_MuchoPixels_7: 2467329559177804928
+      Weapon_&_Bullet_MuchoPixels_0: -737170406580763674
+      Weapon_&_Bullet_MuchoPixels_1: 3674543409907299621
+      Weapon_&_Bullet_MuchoPixels_5: 7342932414387450978
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

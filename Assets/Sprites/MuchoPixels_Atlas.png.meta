@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: 11cc64a1bc30f334bb3702a8a2762a72
+guid: d908c3942b61e409180bc82b102f6669
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5971374973502496534
+    second: MuchoPixels_Atlas_0
+  - first:
+      213: -5972111148354332953
+    second: MuchoPixels_Atlas_1
+  - first:
+      213: -4719924365903260669
+    second: MuchoPixels_Atlas_2
+  - first:
+      213: 2387368297801528804
+    second: MuchoPixels_Atlas_3
+  - first:
+      213: 8292876365225586833
+    second: MuchoPixels_Atlas_4
+  - first:
+      213: -9006177875772746979
+    second: MuchoPixels_Atlas_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -62,81 +80,81 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -148,15 +166,15 @@ TextureImporter:
         y: 124
         width: 64
         height: 32
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1b2d90987afecf459477bc28147c596
-      internalID: -1749412273
+      spriteID: 02d1060982c1e4a8188d4153164ff795
+      internalID: 5971374973502496534
       vertices: []
       indices: 
       edges: []
@@ -169,15 +187,15 @@ TextureImporter:
         y: 123
         width: 116
         height: 36
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1806b4edcd4fc7147a4fcc802b69b27e
-      internalID: -105004352
+      spriteID: 070a7c9e3e8bd4468b48d7f18294abb0
+      internalID: -5972111148354332953
       vertices: []
       indices: 
       edges: []
@@ -190,15 +208,15 @@ TextureImporter:
         y: 39
         width: 51
         height: 64
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab69373e1c04d949b63c99119de72f8
-      internalID: 121088234
+      spriteID: 7c34bbc8881e8489ca166e3c44f279d9
+      internalID: -4719924365903260669
       vertices: []
       indices: 
       edges: []
@@ -211,15 +229,15 @@ TextureImporter:
         y: 91
         width: 88
         height: 19
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6788b94987dbf024bb04fb39a272d2de
-      internalID: 1938043995
+      spriteID: 7aa09dab1caaf4832850b252868d1e1c
+      internalID: 2387368297801528804
       vertices: []
       indices: 
       edges: []
@@ -232,15 +250,15 @@ TextureImporter:
         y: 27
         width: 128
         height: 48
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b000e9e5c9a8819408532d9feba874ce
-      internalID: 1826474293
+      spriteID: e613f1b509ac54486b21b6f720104a1e
+      internalID: 8292876365225586833
       vertices: []
       indices: 
       edges: []
@@ -253,15 +271,15 @@ TextureImporter:
         y: 0
         width: 256
         height: 18
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1342bb7e85bf35240b5b6dde500d743f
-      internalID: -1591952488
+      spriteID: 7c11b934628a64e1ba93620c03e37ee4
+      internalID: -9006177875772746979
       vertices: []
       indices: 
       edges: []
@@ -269,7 +287,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: df5f257335d304f9ab123c7e3343b978
     internalID: 0
     vertices: []
     indices: 
@@ -277,12 +295,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MuchoPixels_Atlas_4: 1826474293
-      MuchoPixels_Atlas_0: -1749412273
-      MuchoPixels_Atlas_1: -105004352
-      MuchoPixels_Atlas_5: -1591952488
-      MuchoPixels_Atlas_2: 121088234
-      MuchoPixels_Atlas_3: 1938043995
+      MuchoPixels_Atlas_4: 8292876365225586833
+      MuchoPixels_Atlas_0: 5971374973502496534
+      MuchoPixels_Atlas_1: -5972111148354332953
+      MuchoPixels_Atlas_5: -9006177875772746979
+      MuchoPixels_Atlas_2: -4719924365903260669
+      MuchoPixels_Atlas_3: 2387368297801528804
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
