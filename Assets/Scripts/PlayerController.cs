@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 	// References
 	private Rigidbody2D _rigidbody;
 	private Animator _animator;
+	private AudioSource _audio;
 
 	// Long Idle
 	private float _longIdleTimer;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 	{
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
+		_audio = GetComponent<AudioSource>();
 	}
 
 	void Start()
@@ -67,6 +69,7 @@ public class PlayerController : MonoBehaviour
 			_movement = Vector2.zero;
 			_rigidbody.velocity = Vector2.zero;
 			_animator.SetTrigger("Attack");
+			_audio.Play();
 		}
 	}
 

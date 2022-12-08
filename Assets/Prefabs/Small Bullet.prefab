@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9138191430410896772}
   - component: {fileID: 4919693774689091794}
   - component: {fileID: 2629171684236220676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Small Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9020e4e3bec449ffbc6dcd290559b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   speed: 3.5
   direction: {x: 0, y: 0}
   livingTime: 3

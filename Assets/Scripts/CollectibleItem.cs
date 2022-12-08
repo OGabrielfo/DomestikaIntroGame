@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
-	[SerializeField] GameObject lightingParticles;
-	[SerializeField] GameObject burstParticles;
+	public int healthRestoration = 1;
+	public GameObject lightingParticles;
+	public GameObject burstParticles;
 
 	private SpriteRenderer _rederer;
+	private Collider2D _collider;
 
 	private void Awake()
 	{
 		_rederer = GetComponent<SpriteRenderer>();
+		_collider = GetComponent<Collider2D>();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player")) {
+			// Cure Player
+			collision.SendMessageUpwards("AddHealth", healthRestoration);
+
+			// Disable Collider
+			_collider.enabled = false;
+
+			// Visual Stuff
 			_rederer.enabled = false;
 			lightingParticles.SetActive(false);
 			burstParticles.SetActive(true);
 
+			// Destroy after some time
 			Destroy(gameObject, 2f);
 		}
 	}

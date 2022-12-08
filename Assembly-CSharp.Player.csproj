@@ -67,15 +67,18 @@
     <Compile Include="Assets\Tilemap\Tiles\Pipeline Tile\Scripts\PipelineTile.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Disabler.cs" />
     <Compile Include="Assets\Tilemap\Brushes\Tint Brush Smooth\Scripts\TintTextureGenerator.cs" />
     <Compile Include="Assets\Tilemap\Tiles\Rule Override Tile\Scripts\RuleOverrideTile.cs" />
     <Compile Include="Assets\Tilemap\Tiles\Animated Tile\Scripts\AnimatedTile.cs" />
     <Compile Include="Assets\Tilemap\Tiles\Weighted Random Tile\WeightedRandomTile.cs" />
     <Compile Include="Assets\Scripts\InstantiatePrefab.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
-    <Compile Include="Assets\Tilemap\Tiles\Isometric Rule Tile\IsometricRuleTile.cs" />
     <Compile Include="Assets\Scripts\EnemyPooling.cs" />
-    <Compile Include="Assets\Scripts\Disabler.cs" />
+    <Compile Include="Assets\Tilemap\Tiles\Isometric Rule Tile\IsometricRuleTile.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

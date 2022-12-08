@@ -14,6 +14,7 @@ public class EnemyPatrol : MonoBehaviour
 	private Rigidbody2D _rigidbody;
 	private Animator _animator;
 	private Weapon _weapon;
+	private AudioSource _audio;
 
 	// Movement
 	private Vector2 _movement;
@@ -26,6 +27,7 @@ public class EnemyPatrol : MonoBehaviour
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
 		_weapon = GetComponentInChildren<Weapon>();
+		_audio = GetComponent<AudioSource>();
 	}
 
 	// Start is called before the first frame update
@@ -63,6 +65,11 @@ public class EnemyPatrol : MonoBehaviour
 			horizontalVelocity = horizontalVelocity * -1f;
 		}
 
+		if (_isAttacking)
+        {
+			horizontalVelocity = 0f;
+        }
+
 		_rigidbody.velocity = new Vector2(horizontalVelocity, _rigidbody.velocity.y);
 	}
 
@@ -74,7 +81,7 @@ public class EnemyPatrol : MonoBehaviour
 	private void OnTriggerStay2D(Collider2D collision)
 	{
 		if (_isAttacking == false && collision.CompareTag("Player")) {
-			StartCoroutine(AimAndShoot());
+			StartCoroutine("AimAndShoot");
 		}
 	}
 
@@ -88,9 +95,6 @@ public class EnemyPatrol : MonoBehaviour
 
 	private IEnumerator AimAndShoot()
 	{
-		float speedBackup = speed;
-		speed = 0f;
-
 		_isAttacking = true;
 
 		yield return new WaitForSeconds(aimingTime);
@@ -100,13 +104,25 @@ public class EnemyPatrol : MonoBehaviour
 		yield return new WaitForSeconds(shootingTime);
 
 		_isAttacking = false;
-		speed = speedBackup;
+		
 	}
 
 	void CanShoot()
 	{
 		if (_weapon != null) {
 			_weapon.Shoot();
+			_audio.Play();
 		}
 	}
+
+    private void OnEnable()
+    {
+		_isAttacking = false;
+    }
+
+    private void OnDisable()
+    {
+        StopCoroutine("AimAndShoot");
+		_isAttacking = false;
+    }
 }

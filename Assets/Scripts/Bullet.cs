@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+	public float damage = 1f;
 	public float speed = 2f;
 	public Vector2 direction;
 
@@ -14,6 +15,7 @@ public class Bullet : MonoBehaviour
 	private SpriteRenderer _renderer;
 	private float _startingTime;
 	private Rigidbody2D _rigidbody;
+	private bool _returning = false;
 
 	void Awake()
 	{
@@ -49,10 +51,23 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (_returning == false && collision.CompareTag("Player"))
         {
 			Destroy(gameObject);
 			// Damage Player
+			collision.SendMessageUpwards("AddDamage", damage);
 		}
+
+		if (_returning == true && collision.CompareTag("Enemy"))
+        {
+			collision.SendMessageUpwards("AddDamage");
+			Destroy(gameObject);
+        }
+    }
+
+	public void AddDamage()
+    {
+		_returning = true;
+		direction = direction * -1;
     }
 }
