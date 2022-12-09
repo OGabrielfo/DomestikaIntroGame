@@ -38,6 +38,8 @@ public class EnemyPatrol : MonoBehaviour
 		} else if (transform.localScale.x > 0f) {
 			_facingRight = true;
 		}
+
+
 	}
 
 	// Update is called once per frame

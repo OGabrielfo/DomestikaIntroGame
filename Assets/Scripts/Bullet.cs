@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 	public float damage = 1f;
 	public float speed = 2f;
 	public Vector2 direction;
+	public GameObject explosionPrefab;
 
 	public float livingTime = 3f;
 	public Color initialColor = Color.white;
@@ -16,6 +17,8 @@ public class Bullet : MonoBehaviour
 	private float _startingTime;
 	private Rigidbody2D _rigidbody;
 	private bool _returning = false;
+
+	private float explosionTime = 2f;
 
 	void Awake()
 	{
@@ -54,6 +57,7 @@ public class Bullet : MonoBehaviour
         if (_returning == false && collision.CompareTag("Player"))
         {
 			Destroy(gameObject);
+			InstantiateExplosion();
 			// Damage Player
 			collision.SendMessageUpwards("AddDamage", damage);
 		}
@@ -62,12 +66,25 @@ public class Bullet : MonoBehaviour
         {
 			collision.SendMessageUpwards("AddDamage");
 			Destroy(gameObject);
-        }
+			InstantiateExplosion();
+		}
     }
 
 	public void AddDamage()
     {
 		_returning = true;
 		direction = direction * -1;
+    }
+
+	public void InstantiateExplosion()
+    {
+		
+		GameObject bulletExplosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
+
+		if (explosionTime > 0f)
+        {
+			Destroy(bulletExplosion, explosionTime);
+        }
+		
     }
 }

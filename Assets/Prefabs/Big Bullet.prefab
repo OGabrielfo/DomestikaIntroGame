@@ -152,6 +152,8 @@ MonoBehaviour:
   damage: 2
   speed: 2.25
   direction: {x: 0, y: 0}
+  explosionPrefab: {fileID: 7001277760085193274, guid: 416dd652e2afaae42a082e15e15c6dd7,
+    type: 3}
   livingTime: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
   finalColor: {r: 1, g: 0, b: 0, a: 1}

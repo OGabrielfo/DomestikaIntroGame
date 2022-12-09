@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 	public float longIdleTime = 5f;
 	public float speed = 2.5f;
 	public float jumpForce = 2.5f;
+
+	public int numPoints;
 
 	public Transform groundCheck;
 	public LayerMask groundLayer;
@@ -55,6 +58,9 @@ public class PlayerController : MonoBehaviour
 				Flip();
 			}
 		}
+
+		// Points
+		
 
 		// Is Grounded?
 		_isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);

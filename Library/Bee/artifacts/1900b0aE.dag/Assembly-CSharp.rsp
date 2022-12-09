@@ -349,6 +349,8 @@
 "Assets/Scripts/PlayerAttack.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerHealth.cs"
+"Assets/Scripts/PointsCounter.cs"
+"Assets/Scripts/QuitGame.cs"
 "Assets/Scripts/TestingKeys.cs"
 "Assets/Scripts/Weapon.cs"
 "Assets/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs"
