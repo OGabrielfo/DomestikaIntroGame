@@ -6971,7 +6971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &866299848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23122,7 +23122,6 @@ MonoBehaviour:
   longIdleTime: 5
   speed: 2.5
   jumpForce: 6
-  numPoints: 0
   groundCheck: {fileID: 112919299}
   groundLayer:
     serializedVersion: 2
@@ -23157,6 +23156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf699f75c1c249d4cb0e0ea65ddaa6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualPoints: {fileID: 2115435396}
 --- !u!82 &1948019726
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23687,7 +23687,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2115435395}
   - component: {fileID: 2115435397}
-  - component: {fileID: 2115435398}
   - component: {fileID: 2115435396}
   m_Layer: 5
   m_Name: Points
@@ -23813,15 +23812,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115435394}
   m_CullTransparentMesh: 1
---- !u!114 &2115435398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115435394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6303192668da4c94cb83b947b6787242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

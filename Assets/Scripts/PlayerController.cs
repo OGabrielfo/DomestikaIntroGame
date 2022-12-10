@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour
 	public float speed = 2.5f;
 	public float jumpForce = 2.5f;
 
-	public int numPoints;
-
 	public Transform groundCheck;
 	public LayerMask groundLayer;
 	public float groundCheckRadius;
@@ -58,9 +56,6 @@ public class PlayerController : MonoBehaviour
 				Flip();
 			}
 		}
-
-		// Points
-		
 
 		// Is Grounded?
 		_isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);

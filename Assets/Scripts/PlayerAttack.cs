@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public TextMeshProUGUI visualPoints;
+    private float points = 0f;
+
+    
     private bool _isAttacking;
     private Animator _animator;
 
@@ -27,10 +32,21 @@ public class PlayerAttack : MonoBehaviour
     {
         if (_isAttacking == true)
         {
-            if(collision.CompareTag("Enemy") || collision.CompareTag("Big Bullet"))
+            if(collision.CompareTag("Enemy"))
+            {
+                collision.SendMessageUpwards("AddDamage");
+            } 
+            else if (collision.CompareTag("Big Bullet"))
             {
                 collision.SendMessageUpwards("AddDamage");
             }
         }
+    }
+
+    private void AddPoints(float addPoints)
+    {
+        points += addPoints;
+        Debug.Log(points);
+        visualPoints.text = points.ToString();
     }
 }

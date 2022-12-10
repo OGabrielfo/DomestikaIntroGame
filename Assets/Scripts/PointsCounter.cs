@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PointsCounter : MonoBehaviour
 {
-    private int points;
+    public TextMeshProUGUI visualPoints;
+    private float points;
 
     void Start()
     {
@@ -15,7 +17,8 @@ public class PointsCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        points = Time.deltaTime;
+        visualPoints.text = points.ToString();
     }
 
     public void AddPoints(int point)

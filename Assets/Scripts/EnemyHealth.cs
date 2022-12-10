@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int points;
+    public float points;
 
     private void Start()
     {
@@ -14,5 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public void AddDamage()
     {
         gameObject.SetActive(false);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.SendMessageUpwards("AddPoints", points);
     }
 }
